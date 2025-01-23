@@ -26,7 +26,7 @@ func TestVLessOutbound(t *testing.T) {
 					"users": [
 						{
 							"id": "27848739-7e62-4138-9fd3-098a63964b6b",
-							"flow": "xtls-rprx-vision-udp443",
+							"flow": "meli-udp443",
 							"encryption": "none",
 							"level": 0
 						}
@@ -47,7 +47,7 @@ func TestVLessOutbound(t *testing.T) {
 							{
 								Account: serial.ToTypedMessage(&vless.Account{
 									Id:         "27848739-7e62-4138-9fd3-098a63964b6b",
-									Flow:       "xtls-rprx-vision-udp443",
+									Flow:       "meli-udp443",
 									Encryption: "none",
 								}),
 								Level: 0,
@@ -71,7 +71,7 @@ func TestVLessInbound(t *testing.T) {
 				"clients": [
 					{
 						"id": "27848739-7e62-4138-9fd3-098a63964b6b",
-						"flow": "xtls-rprx-vision",
+						"flow": "meli",
 						"level": 0,
 						"email": "love@example.com"
 					}
@@ -98,7 +98,7 @@ func TestVLessInbound(t *testing.T) {
 					{
 						Account: serial.ToTypedMessage(&vless.Account{
 							Id:   "27848739-7e62-4138-9fd3-098a63964b6b",
-							Flow: "xtls-rprx-vision",
+							Flow: "meli",
 						}),
 						Level: 0,
 						Email: "love@example.com",
